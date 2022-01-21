@@ -1,0 +1,18 @@
+{
+  "testEnvironment": "jsdom",
+  "testPathIgnorePatterns": ["/node_modules/"],
+  "collectCoverage": false,
+  "collectCoverageFrom": ["src/**/*.ts(x)"],
+  "setupFilesAfterEnv": ["<rootDir>/jest.setup.ts"],
+  "moduleNameMapper": {
+    "env/(.*)$": "<rootDir>/env",
+    "constants/(.*)$": "<rootDir>/src/constants/$1",
+    "context/(.*)$": "<rootDir>/src/context/$1",
+    "pages/(.*)$": "<rootDir>/src/pages/$1",
+    "utilities/(.*)$": "<rootDir>/src/utilities/$1",
+    "mocks/(.*)$": "<rootDir>/src/mocks/$1",
+    "amazon-cognito-identity-js": "<rootDir>/src/mocks/packages/amazon-cognito-identity-js.ts",
+    "layout/(.*)$": "<rootDir>/src/components/layout/$1",
+    "\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/mocks/data/file.ts"
+  }
+}

@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7e8e8;
+}
+#control-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+#control-container button {
+  padding: 8px;
+  font-weight: bold;
+}
+#grid-container {
+  display: grid;
+  text-align: center;
+  gap: 4px;
+}
+.cell {
+  border-radius: 4px;
+  height: 15px;
+  width: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* transition: all 0.2s ease-in-out; */
+  font-size: 8px;
+}
+.alive {
+  background-color: #ea7dc7;
+}
+.dead {
+  background-color: #f2a2e336;
+}
